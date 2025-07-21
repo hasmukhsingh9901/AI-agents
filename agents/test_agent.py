@@ -1,6 +1,8 @@
 from core.agent_base import AgentBase
 import google.generativeai as genai
 import os
+from dotenv import load_dotenv
+load_dotenv()  # Load environment variables from .env file
 
 class TestAgent(AgentBase):
     def __init__(self, context=None):
